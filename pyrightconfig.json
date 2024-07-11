@@ -1,0 +1,6 @@
+{
+  "exclude": ["**/__pycache__"],
+  "reportMissingImports": true,
+  "venvPath": ".",
+  "venv": "venv"
+}
