@@ -1,7 +1,7 @@
 from math import pi
 
 
-class Point():
+class Point:
     def __init__(self, x, y):
         if x < 0 or y < 0:
             raise ValueError("As coordenadas devem ser não negativas")
@@ -17,7 +17,8 @@ class Point():
     def __str__(self):
         return f"Ponto({self.__x}, {self.__y})"
 
-class Circle():
+
+class Circle:
     def __init__(self, centro, raio):
         if raio <= 0:
             raise ValueError("O raio não deve ser negativo ou nulo")
