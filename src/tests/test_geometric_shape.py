@@ -50,6 +50,7 @@ def test_str_circulo(circulo):
     message = "Círculo(Centro: Ponto(0, 0), Raio: 4)"
     assert str(circulo) == message
 
+
 def test_criar_circulo():
     user_input = ["0 0", "4"]
 
