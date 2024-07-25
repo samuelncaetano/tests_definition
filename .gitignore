@@ -1,7 +1,6 @@
 __pycache__
 .pytest_cache
 .vscode
-htmlcov
-venv
+.venv
 .coverage
-main.py
+htmlcov
