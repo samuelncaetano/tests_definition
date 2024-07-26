@@ -1,4 +1,5 @@
 {
+  "name": "tests",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
     "vscode": {
@@ -14,6 +15,8 @@
         "christian-kohler.path-intellisense"
       ],
       "settings": {
+        "workbench.iconTheme": "symbols",
+        "workbench.colorTheme": "Min Dark",
         "workbench.editor.labelFormat": "short",
         "workbench.activityBar.location": "hidden",
         "workbench.layoutControl.enabled": false,
@@ -49,5 +52,5 @@
     },
     "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {}
   },
-  "postCreateCommand": "zsh"
+  "postCreateCommand": "pip3 install -r requirements.txt"
 }
