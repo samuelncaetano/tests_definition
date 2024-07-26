@@ -1,5 +1,4 @@
 {
-  "name": "tests",
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
     "vscode": {
@@ -21,7 +20,6 @@
         "workbench.activityBar.location": "hidden",
         "workbench.layoutControl.enabled": false,
         "terminal.integrated.fontSize": 14,
-        "terminal.integrated.fontfamily": "MesloLGS NF",
         "editor.fontSize": 14,
         "editor.lineHeight": 1.8,
         "editor.renderLineHighlight": "gutter",
@@ -40,7 +38,8 @@
         "explorer.fileNesting.enabled": true,
         "explorer.fileNesting.patterns": {
           "requirements.txt": ".flake8, .pylintrc, .pre-commit-config.yaml, pyrightconfig.json, .cz.json, .editorconfig, pyproject.toml"
-        }
+        },
+        "cSpell.language": "en,pt"
       }
     }
   },
