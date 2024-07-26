@@ -1,5 +1,4 @@
-# Testando a criação de um UserAccount válido
-from src.package.user_account import UserAccount
+from src.user.user_account import UserAccount
 
 user = UserAccount("Alice", "password123")
 # O nome deveria ser 'Alice'

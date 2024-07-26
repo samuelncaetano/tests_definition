@@ -1,6 +1,6 @@
 import pytest
 
-from src.package.user_account import UserAccount
+from src.user.user_account import UserAccount
 
 
 def test_create_user():
