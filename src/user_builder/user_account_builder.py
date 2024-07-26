@@ -1,7 +1,7 @@
 from src.user.user_account import UserAccount
 
 
-class UserBuilder:
+class UserAccountBuilder:
     def __init__(self):
         self.name = ""
         self.password = ""

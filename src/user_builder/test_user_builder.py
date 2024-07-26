@@ -1,11 +1,11 @@
 import pytest
 
-from src.builder.user_account_builder import UserBuilder
+from src.user_builder.user_account_builder import UserAccountBuilder
 
 
 @pytest.fixture
 def user_builder():
-    return UserBuilder().with_name("Alice").with_password("password123").build()
+    return UserAccountBuilder().with_name("Alice").with_password("password123").build()
 
 
 def test_create_user(user_builder):
