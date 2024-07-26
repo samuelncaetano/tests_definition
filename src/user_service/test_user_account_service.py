@@ -46,7 +46,7 @@ def test_register_user(user_builder, user_service, database_mock):
     # Arrange
     name = user_builder.getName()
     password = user_builder.getPassword()
-    # age = user_builder.getAge()
+    age = user_builder.getAge()
 
     # Act
     result = user_service.register_user(name, password, age)
@@ -65,8 +65,8 @@ def test_register_user(user_builder, user_service, database_mock):
 def test_get_users(user_service, database_mock):
     # Arrange
     users = [
-        UserAccountBuilder().with_username("John Doe").with_password("securepassword").with_age(30).build(),
-        UserAccountBuilder().with_username("Jane Doe").with_password("securepassword").with_age(25).build(),
+        UserAccountBuilder().with_name("John Doe").with_password("securepassword").with_age(30).build(),
+        UserAccountBuilder().with_name("Jane Doe").with_password("securepassword").with_age(25).build(),
     ]
     database_mock.get_all.return_value = users
 
